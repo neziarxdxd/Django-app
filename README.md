@@ -6,12 +6,13 @@ The clean, fast and right way to start a new Django `2.2.2` powered website.
 
 Setup project environment with [virtualenv](https://virtualenv.pypa.io) and [pip](https://pip.pypa.io).
 
-```bash
+```
+bash
 $ virtualenv project-env
 $ source project-env/bin/activate
 $ pip install -r https://raw.githubusercontent.com/juanifioren/django-project-template/master/requirements.txt
 
-# You may want to change the name `myapp`
+# You may want to change the name 'myapp`
 $ django-admin startproject --template https://github.com/raizengxd/OTHER-EXCESS/new/master.zip myapp
 
 $ cd myapp/
