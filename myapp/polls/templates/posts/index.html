@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
     <title>Document</title>
 </head>
 <style>
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 </style>
 <body>
-    <h1>Raizen Sangalang</h1>
+    <div class="container">
+
+        <h1>Raizen Sangalang</h1>
     <h2>{{ title }}</h2>
-    <ul>
+    <ul class="collection">
+
         {% for d in data %}
-        <li>{{d.name}}</li>
+        <a href="post/data{{d.id}}"><li class="collection-item">{{d.name}}</li></a>
+
         {% endfor %}
 
     </ul>
+    </div>
+    
 </body>
 </html>
