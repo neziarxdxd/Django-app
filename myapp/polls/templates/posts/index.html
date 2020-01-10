@@ -14,5 +14,11 @@ body{
 <body>
     <h1>Raizen Sangalang</h1>
     <h2>{{ title }}</h2>
+    <ul>
+        {% for d in data %}
+        <li>{{d.name}}</li>
+        {% endfor %}
+
+    </ul>
 </body>
 </html>
