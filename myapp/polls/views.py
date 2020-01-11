@@ -9,5 +9,6 @@ def index (request):
         'title': 'This is my ',
         'data': e
     }
+    print(e)
     
     return render(request, 'posts/index.html',context)
