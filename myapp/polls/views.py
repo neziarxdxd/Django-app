@@ -7,8 +7,8 @@ def index (request):
     e = Event.objects.all()
     context = {
         'title': 'This is my ',
-        'data': e
+        'datas': e
     }
-    print(e)
+    
     
     return render(request, 'posts/index.html',context)

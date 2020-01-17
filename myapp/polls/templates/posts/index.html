@@ -13,19 +13,43 @@
             
     <title>Document</title>
 </head>
-<style>
+<style type="text/css">
+    .size_title{
+        font-weight: bold;
+        font-size: 12pt;
+
+    }
+    
 
 </style>
 <body>
     <div class="container">
 
-        <h1>Raizen Sangalang</h1>
-    <h2>{{ title }}</h2>
+        <h1>List of the events</h1>
+    
+
     <ul class="collection">
+        <!-- event_date = models.DateTimeField('Event Date')
+      venue = models.CharField(max_length=120)
+      manager = models.CharField(max_length = 60)
+      description = models.TextField(blank=True) -->
 
-        {% for d in data %}
-        <a href="post/data{{d.id}}"><li class="collection-item">{{d.name}}</li></a>
 
+        {% for data in datas %}
+        <li class="collection-item">
+            <div class="size_title">
+            {{data.name}}
+        </div>
+            <ul>
+                <li>{{data.event_date}}</li>
+                <li>{{data.venue}}</li>
+                <li>{{data.manager}}</li>
+                <li>{{data.description}}</li>
+
+            </ul>
+            
+        </li>
+        
         {% endfor %}
 
     </ul>
