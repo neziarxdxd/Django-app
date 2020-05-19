@@ -26,7 +26,7 @@ $ python manage.py runserver
 * Basic Django scaffolding (commands, templatetags, statics, media files, etc).
 * Split settings in two files. `settings_custom.py` for specific environment settings (localhost, production, etc). `myapp/settings.py` for core settings.
 * Simple logging setup ready for production envs.
-
+* Nice
 ## Contributing
 
 I love contributions, so please feel free to fix bugs, improve things, provide documentation. Just send a pull request.
